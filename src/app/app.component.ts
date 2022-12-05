@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 interface Tarjeta{
   titulo:string;
   subtitulo:string;
-  nro?:number;
+  image:string;
 }
 @Component({
   selector: 'app-root',
@@ -16,9 +16,9 @@ export class AppComponent implements OnInit{
 
   ngOnInit(): void{
     this.ArregloTarjetas = [
-      {titulo:'Video 1', subtitulo:'Subtitulo Video 1'},
-      {titulo:'Video 2', subtitulo:'Subtitulo Video 2'},
-      {titulo:'Video 3', subtitulo:'Subtitulo Video 3'},
+      {titulo:'Video 1', subtitulo:'Subtitulo Video 1',image:"https://www.todofondos.net/wp-content/uploads/Fondo-de-Pantalla-de-Meliodas-Nanatsu-No-Taizai-A-1273x700-1.jpg"},
+      {titulo:'Video 2', subtitulo:'Subtitulo Video 2',image:"https://i.blogs.es/5d6007/luffy-en-one-piece/1366_2000.jpeg"},
+      {titulo:'Video 3', subtitulo:'Subtitulo Video 3',image:"https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2022/11/Naruto.jpg?fit=1280%2C720&ssl=1"},
     ]
   }
 }
